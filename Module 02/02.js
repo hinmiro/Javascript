@@ -10,4 +10,4 @@ let myStr = "";
 for (let i = 0; i < party.length; i++) {
     myStr += `<li>${party[i]}</li>`;
 }
-document.querySelector('#list').innerHTML = myStr
+document.querySelector('#list').innerHTML = myStr;
