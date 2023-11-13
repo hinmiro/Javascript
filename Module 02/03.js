@@ -1,6 +1,5 @@
 'use strict';
 const dogs = [];
-const el = document.getElementById('ul');
 
 for (let i = 0; i <= 6; i++) {
     const name = prompt('Give name of one dog.');
@@ -8,6 +7,8 @@ for (let i = 0; i <= 6; i++) {
 }
 
 dogs.reverse();
-for (let dog in dogs) {
-    el.innerHTML += `<li>${dogs[dog]}</li>`;
+let myStr = '';
+for (let i = 0; i < dogs.length; i++) {
+    myStr += `<li>${dogs[i]}</li>`
 }
+document.querySelector('#ul').innerHTML = myStr;
