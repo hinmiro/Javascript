@@ -2,7 +2,7 @@
 const dogs = [];
 
 for (let i = 1; i <= 6; i++) {
-    const name = prompt('Give name of one dog.');
+    const name = prompt('Name one of the dogs.');
     dogs.push(name);
 }
 
