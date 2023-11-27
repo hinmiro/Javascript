@@ -28,9 +28,10 @@ function postData(data) {
         const url = document.createElement('a');
         const img = document.createElement('img');
         const summary = document.createElement('div');
-        h2.append(document.createTextNode(byte.show.name));
+        h2.appendChild(document.createTextNode(byte.show.name));
         article.appendChild(h2);
-        img.src = null ? `https://via.placeholder.com/210x295?text=Not%20Found` : byte.show.image?.medium;
+        img.src = byte.show.image ? byte.show.image.medium : 'https://via.placeholder.com/210x295?text=Not%20Found';
+        img.alt = byte.show.name;
         article.appendChild(img);
         url.href = byte.show.url;
         url.textContent = byte.show.name;
